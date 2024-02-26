@@ -1,0 +1,44 @@
+{
+  "name": "dakujem/oliva74",
+  "description": "Backport of dakujem/oliva (Flexible tree structure, tree builders, traversal iterators, filter.) for PHP 7.4",
+  "license": "Unlicense",
+  "keywords": [
+    "tree",
+    "tree iterator",
+    "materialized path tree",
+    "recursive tree"
+  ],
+  "authors": [
+    {
+      "name": "Andrej Rypák",
+      "email": "xrypak@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "7.4.*",
+    "ext-json": "*"
+  },
+  "require-dev": {
+    "nette/tester": "^2.4",
+    "tracy/tracy": "^2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Dakujem\\Oliva\\": "src/"
+    }
+  },
+  "scripts": {
+    "test": "@test:local",
+    "test:local": "@php vendor/nette/tester/src/tester tests -C --colors 1",
+    "test:ci": "tester tests"
+  },
+  "archive": {
+    "exclude": ["/tests", "/.github"]
+  },
+  "abandoned": "dakujem/oliva",
+  "extra": {
+    "branch-alias": {
+      "dev-trunk": "1.0.x-dev"
+    }
+  }
+}
