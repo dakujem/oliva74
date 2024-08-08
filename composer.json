@@ -35,7 +35,6 @@
   "archive": {
     "exclude": ["/tests", "/.github"]
   },
-  "--not-yet--abandoned": "dakujem/oliva",
   "extra": {
     "branch-alias": {
       "dev-trunk": "1.0.x-dev"
