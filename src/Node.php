@@ -214,6 +214,7 @@ class Node implements TreeNodeContract, DataNodeContract, MovableNodeContract, I
     /**
      * @return mixed Intentionally returns mixed and not an array, so that overriding implementations may expand it to whatever value desired.
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()//: mixed
     {
         return [
