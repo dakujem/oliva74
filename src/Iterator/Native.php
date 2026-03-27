@@ -57,6 +57,7 @@ final class Native implements RecursiveIterator
         $this->iterator->next();
     }
 
+    #[\ReturnTypeWillChange]
     public function key()//: mixed
     {
         return $this->iterator->key();
